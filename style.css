@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+.container{
+    
+}
+body{
+   font-family: "Raleway";
+}
+
+
+/*HEADER*/
+.head{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    
+}
+.head img{
+   max-width: 30%;
+   max-height: 30%;
+   padding: 50px;
+}
+.head ul{
+    list-style-type: none;
+    margin-left: auto;
+    padding: 50px;
+}
+.head li{
+    margin: 50px;
+    font-size: 20px;
+    display: inline;
+}
+
+/*MAIN-1*/
+.main1{
+   display: flex;
+   height:fit-content;
+   margin-bottom: 300px;
+}
+.main1 .left{
+    width: 50%;
+    height: max-content;
+    margin: auto 0;
+    padding-left: 100px;
+}
+.main1 h1{
+font-size: 50px;
+margin-bottom: 25px;
+}
+.main1 p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.main1 img{
+    max-width: 90%;
+}
+.email {
+    height: 50px;
+    width: 380px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.email-btn{
+    height: 55px;
+    width: 250px;
+    background-color:  hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+.email-btn:hover{
+    background-color: hsl(224, 93%, 70%);
+    cursor: pointer;
+}
+
+/*MAIN2*/
+.main2{
+    display: flex;
+    height:fit-content;
+    margin-bottom: 300px;
+ }
+
+.main2 .left{
+    width: 50%;
+    height: max-content;
+    padding-left: 100px;
+}
+.main2 h1{
+    font-size: 45px;
+    margin-bottom: 25px;
+    }
+.main2 p{
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+.link{
+    position: relative;
+    margin-bottom: 80px;
+}
+.link p{
+    font-size: 22px;
+    position:absolute;
+}
+.link img{
+    height: 30px;
+    position: absolute;
+    left:210px
+}
+.box{
+    height: 200px;
+    width: 400px;
+    box-shadow: 5px 2px 20px 1px #888888;
+    padding: 20px;
+
+}
+.box img{
+    width: 20px;
+}
+.person{
+    position: relative;
+}
+.person img{
+    border-radius: 50%;
+    width: 40px;
+    position: absolute;
+}
+.person h3{
+ position: absolute;
+ left: 50px;
+}
+.person p{
+    position: absolute;
+    left: 50px;
+    top:20px
+}
+
+
+.main2 img{
+    max-width: 90%;
+}
+
+
+/*Main3*/
+.main3{
+background-color: hsl(238, 22%, 44%);
+height: 350px;
+display: flex;
+}
+.main3 .left{
+    width: 50%;
+    height: max-content;
+    margin: auto 0;
+    padding-left: 100px;
+    color: white;
+}
+.main3 h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.main3 p{
+    font-size: 20px;
+}
+.main3 .right{
+    width: 50%;
+    margin:auto 0;
+   
+}
+.main3 .right>input{
+    display: block;
+}
+.main3-email{
+    width: 60%;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.main3-btn{
+    width: 30%;
+    height: 50px;
+    background-color:  hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+.main3-btn:hover{
+    background-color: hsl(224, 93%, 70%);
+    cursor: pointer;
+}
+/*footer*/
+.foot{
+    height:450px;
+    display: flex;
+    background-color:hsl(243, 87%, 12%);
+    width: 100%;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    margin: auto 0;
+    width: 30%;
+    margin-left: 110px;
+}
+
+.one .logo img{
+    width: 45%;
+    margin-bottom: 20px;
+}
+.phone-icon{
+    margin-bottom: 20px;
+}
+.two{
+    width: 20%;
+    font-size:20px;
+    color: white;
+}
+.two ul{
+    list-style-type: none;
+    margin-top: 220px;
+}
+.two ul>li{
+    padding: 10px;
+}
+.two ul>li:hover{
+   cursor: pointer;
+}
+.three{
+    width: 23.33%;
+    font-size:20px;
+    color: white;
+}
+.three ul{
+    list-style-type: none;
+    margin-top: 220px;
+}
+.three ul>li{
+    padding: 10px;
+}
+.three ul>li:hover{
+   cursor: pointer;
+}
+.four{
+    width: 20% ;
+}
+.four img{
+    width: 7%;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 220px;
+}
