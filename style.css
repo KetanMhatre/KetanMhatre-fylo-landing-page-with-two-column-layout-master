@@ -3,11 +3,13 @@
     margin: 0;
 
 }
+
 .container{
     width: 100vw;
 }
 body{
    font-family: "Raleway";
+   overflow: scroll;
 }
 
 .head{
