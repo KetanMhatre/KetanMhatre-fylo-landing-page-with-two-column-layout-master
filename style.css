@@ -1,37 +1,38 @@
 *{
     padding: 0;
     margin: 0;
-   
+
 }
 .container{
-    
+    width: 100vw;
 }
 body{
    font-family: "Raleway";
 }
 
-
-/*HEADER*/
 .head{
     height: 20vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
-    
 }
 .head img{
-   max-width: 30%;
-   max-height: 30%;
+   width: fit-content;
+   height: fit-content;
    padding: 50px;
+   margin-left: 60px;
+   display: flex;
+   align-self: center;
 }
 .head ul{
     list-style-type: none;
-    margin-left: auto;
-    padding: 50px;
+   margin-left: auto;
+   align-self: center;
+   
 }
 .head li{
     margin: 50px;
     font-size: 20px;
-    display: inline;
+    display: inline-block;
 }
 
 /*MAIN-1*/
@@ -45,6 +46,7 @@ body{
     height: max-content;
     margin: auto 0;
     padding-left: 100px;
+   text-align: left;
 }
 .main1 h1{
 font-size: 50px;
@@ -54,18 +56,16 @@ margin-bottom: 25px;
     font-size: 20px;
     margin-bottom: 25px;
 }
-.main1 img{
-    max-width: 90%;
-}
+
 .email {
     height: 50px;
-    width: 380px;
+    width: 60%;
     margin-right: 10px;
     font-size: 18px;
 }
 .email-btn{
     height: 55px;
-    width: 250px;
+    width: 35%;
     background-color:  hsl(224, 93%, 58%);
     color: white;
     border: none;
@@ -75,6 +75,11 @@ margin-bottom: 25px;
     background-color: hsl(224, 93%, 70%);
     cursor: pointer;
 }
+.main1 img{
+    max-width: 70%;
+    padding-left: 190px;
+}
+
 
 /*MAIN2*/
 .main2{
@@ -96,19 +101,21 @@ margin-bottom: 25px;
         font-size: 19px;
         margin-bottom: 25px;
     }
+
 .link{
-    position: relative;
+    display: flex;
     margin-bottom: 80px;
 }
 .link p{
     font-size: 22px;
-    position:absolute;
 }
 .link img{
     height: 30px;
-    position: absolute;
-    left:210px
+    position: relative;
+    left: 10px;
 }
+
+
 .box{
     height: 200px;
     width: 400px;
@@ -172,14 +179,14 @@ display: flex;
     display: block;
 }
 .main3-email{
-    width: 60%;
+    width: 80%;
     height: 45px;
     margin-bottom: 20px;
     margin-right: 10px;
     font-size: 18px;
 }
 .main3-btn{
-    width: 30%;
+    width: 40%;
     height: 50px;
     background-color:  hsl(224, 93%, 58%);
     color: white;
@@ -198,8 +205,7 @@ display: flex;
     width: 100%;
 }
 .one{
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     color: white;
     font-size: 20px;
     margin: auto 0;
@@ -245,13 +251,273 @@ display: flex;
    cursor: pointer;
 }
 .four{
-    width: 20% ;
+    width: fit-content ;
 }
 .four img{
-    width: 7%;
+    width: 30px;
     margin: 10px;
     border-radius: 50%;
     border: 1px solid white;
     padding: 5px;
     margin-top: 220px;
+}
+
+@media screen and (max-width:1000px) {
+    .head img{
+        margin-left: 0px;
+    }
+    .head li{
+        font-size: 25px;
+        margin: 15px;
+    }
+}
+@media screen and (max-width:1400px) {
+
+    .main1 .left{
+        padding-left: 50px;
+    }
+    .main1 img{
+        max-width: 80%;
+        padding-left: 100px;
+    }
+    .main2 .left{
+        padding-left: 50px;
+    }
+    .main3 .left{
+        padding: 30px;
+      }
+      
+} 
+@media screen and (max-width:1300px) {
+    .main1 .left{
+        padding-left: 30px;
+    }
+    .main1 img{
+        max-width: 70%;
+        padding-left: 70px;
+    }
+    .main2 .left{
+        padding-left: 30px;
+    }
+    .main2 .right>img{
+        max-width: 70%;
+        padding-left: 70px;
+    }
+  
+}
+
+@media screen and (max-width:1200px) {
+
+    .main1 .left , .main2 .left{
+        padding-left: 30px;
+    }
+    .main1 img,.main2 .right>img{
+        max-width: 70%;
+        padding-left: 70px;
+    }
+    .main1 h1,.main2 h1{
+        font-size: 40px;
+        margin-bottom: 25px;
+     }
+        .main1 p .main2 p{
+            font-size: 15px;
+            margin-bottom: 25px;
+    }
+    .email-btn{
+       display: block;
+       margin-top: 20px;
+       height: 40px;
+    }
+    .foot{
+        height: fit-content;
+    }
+    .foot .four{
+        margin-left: -50px;
+    }
+        
+}
+
+@media screen and (max-width:1000px) {
+
+    .container{
+        width: 100vw;
+    }
+    .head ul{
+        margin-right: 5px;
+    }
+    .main1 , .main2  {
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+    .main1 .right,.main2 .right{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main1 img{
+        width: 70%;
+    }
+    .main1 img,.main2 .right>img{
+        padding-left: 0px;
+    }
+    .main1 .left,.main2 .left{
+        padding-left: 0px;
+    }
+   
+    .main1 .left,.main2 .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main1 .left h1,p{
+        text-align: center;
+        padding: 30px;
+    }
+    .main2 .left h1,p{
+        text-align: center;
+        padding: 10px;
+    }
+    .main1 p, .main2 .left>p{
+        font-size: 25px;
+    }
+
+    .email,.email-btn{
+        width: 80%;
+        align-self: center;
+    }
+    .email-btn{
+        height: 50px;
+       
+    }
+    .main2 .link{
+        display: flex;
+      justify-content: center;
+       }
+       .link img{
+           top: 10px;
+           left: -4px;
+       }
+       .box{
+        align-self: center;
+       }
+   
+
+       .main3{
+        height: fit-content;
+        width:100%;
+        flex-direction: column;
+        padding-bottom: 20px;
+       }
+       .main3 .left{
+        padding: 0px;
+       }
+
+       .main3 .left,.main3 .right{
+        width: 100%;
+       }
+
+       .main3 .left>p , .left>h1{
+        text-align: center;
+       }
+       .main3 .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       
+       .main3-email,.main3-btn{
+        width: 50%;
+       }
+
+       .foot{
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        font-size: 25px;
+        text-align: center;
+       }
+       .one .logo img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .foot{
+        padding-top: 30px;
+    }
+    .foot .one{
+        margin-left: 0px;
+        width: fit-content;
+    }
+    .foot .two ul,.three ul{
+        margin-top: 20px;
+        width: fit-content;
+    }
+    .foot .four>img{
+        margin-top: 20px;
+    }
+    .foot .one{
+        text-align: left;
+    }
+
+
+    .box{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+    
+    }
+    .box img{
+        width: 15px;
+    }
+    .person{
+        position: relative;
+    }
+    .person img{
+        border-radius: 50%;
+        width: 40px;
+        position: absolute;
+        top:-25px
+    }
+    .person h3{
+     position: absolute;
+     left: 50px;
+     top:-25px;
+    }
+    .person p{
+        position: absolute;
+        left: 40px;
+        top:-10px
+    }
+    
+}
+
+   @media screen and (max-width:800px) {
+    .head img{
+        margin-left: 10px;
+        padding: 10px;
+        width: 30%;
+    }
+    .head li{
+        margin: 2px;
+        font-size: 18px;
+        padding: 5px;
+    }
+    .main3 h1{
+        font-size: 40px;
+    }
+    .main3 p{
+        font-size: 18px;
+    }
+    .foot .one,.two,.three{
+        padding-left: 50px;
+    }
+
+    .foot{
+        text-align: left;
+    }
+    .one,.two,.three{
+        align-self: flex-start;
+    }
+    
+
 }
